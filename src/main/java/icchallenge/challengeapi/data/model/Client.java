@@ -1,6 +1,7 @@
 package icchallenge.challengeapi.data.model;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -12,6 +13,7 @@ import java.time.LocalDate;
 
 @Data
 @Entity
+@NoArgsConstructor
 @Table(name = "clients")
 public class Client {
 
