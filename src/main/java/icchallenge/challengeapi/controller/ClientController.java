@@ -16,9 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class ClientController {
 
     @Autowired
-    private Environment env;
-
-    @Autowired
     private ClientService clientService;
 
     @GetMapping("/test-db")
