@@ -10,10 +10,10 @@
     </parent>
     <groupId>ic-challenge</groupId>
     <artifactId>challengeapi</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2</version>
     <packaging>jar</packaging>
     <name>challengeapi</name>
-    <description>InterCorp simple API challenge</description>
+    <description>Simple API challenge</description>
 
     <properties>
         <java.version>11</java.version>

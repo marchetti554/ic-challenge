@@ -22,6 +22,6 @@ public class ClientService {
     }
 
     public List<Client> getAllClients() {
-        return clientDAO.getAll();
+        return clientDAO.getAllBy();
     }
 }
