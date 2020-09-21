@@ -10,5 +10,5 @@ import java.util.List;
 public interface ClientDAO extends JpaRepository<Client, Integer> {
 
     Client getByClientId(long id);
-    List<Client> getAll();
+    List<Client> getAllBy();
 }
