@@ -3,7 +3,7 @@ package icchallenge.challengeapi.service;
 import icchallenge.challengeapi.data.dao.ClientDAO;
 
 import icchallenge.challengeapi.data.model.Client;
-import icchallenge.challengeapi.data.model.KpiData;
+import icchallenge.challengeapi.data.model.ClientKpiData;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -41,11 +41,11 @@ public class ClientService {
      * - the client average age
      * - the age standard deviation
      *
-     * @return a {@link KpiData}.
+     * @return a {@link ClientKpiData}.
      */
-    public KpiData calculateClientsKpi() {
+    public ClientKpiData calculateClientsKpi() {
         List<Client> clients = clientDAO.findAll();
-        return KpiData.builder()
+        return ClientKpiData.builder()
                 .ageAverage(calculateAgeAverage(clients))
                 .ageStandardDeviation(calculateStandardDeviation(clients))
                 .build();
