@@ -38,11 +38,6 @@ public class ClientServiceTest {
     }
 
     @Test
-    public void saveClient() {
-
-    }
-
-    @Test
     public void calculateClientKPIShouldSuccess() {
 
         double expectedAverage = 42;
