@@ -11,6 +11,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.time.LocalDate;
 
+/**
+ * Model class in charge of represent a Client.
+ *
+ * @author Marco Marchetti
+ */
 @Data
 @Entity
 @NoArgsConstructor
@@ -36,4 +41,6 @@ public class Client {
     private LocalDate birthDate;
     @Column(name = "client_age")
     private int age;
+
+    private LocalDate estimatedDeathDate;
 }
