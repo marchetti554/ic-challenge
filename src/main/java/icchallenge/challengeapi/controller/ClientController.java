@@ -1,7 +1,7 @@
 package icchallenge.challengeapi.controller;
 
 import icchallenge.challengeapi.data.model.Client;
-import icchallenge.challengeapi.data.model.KpiData;
+import icchallenge.challengeapi.data.model.ClientKpiData;
 import icchallenge.challengeapi.data.request.CreateClientRequest;
 
 import icchallenge.challengeapi.service.ClientService;
@@ -29,9 +29,9 @@ public class ClientController {
 
     @ApiOperation(value = "Calculates the client KPI.",
             notes = "Returns the average age and standard deviation.",
-            response = KpiData.class)
+            response = ClientKpiData.class)
     @GetMapping("/kpideclientes")
-    public KpiData getClientsKpi() {
+    public ClientKpiData getClientsKpi() {
         return clientService.calculateClientsKpi();
     }
 

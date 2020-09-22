@@ -2,7 +2,7 @@ package icchallenge.challengeapi.service;
 
 import icchallenge.challengeapi.data.dao.ClientDAO;
 import icchallenge.challengeapi.data.model.Client;
-import icchallenge.challengeapi.data.model.KpiData;
+import icchallenge.challengeapi.data.model.ClientKpiData;
 import org.junit.Before;
 
 
@@ -50,7 +50,7 @@ public class ClientServiceTest {
 
         when(clientDAOMock.findAll()).thenReturn(createClientList());
 
-        KpiData result = clientService.calculateClientsKpi();
+        ClientKpiData result = clientService.calculateClientsKpi();
 
         verify(clientDAOMock).findAll();
 

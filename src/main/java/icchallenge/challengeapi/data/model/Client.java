@@ -1,5 +1,6 @@
 package icchallenge.challengeapi.data.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -33,14 +34,21 @@ public class Client {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "client_id")
     private long clientId;
+
     @Column(name = "client_name")
     private String name;
+
     @Column(name = "client_last_name")
     private String lastName;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     @Column(name = "client_birth_date")
     private LocalDate birthDate;
+
     @Column(name = "client_age")
     private int age;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    @Column(name = "client_estimated_death_date")
     private LocalDate estimatedDeathDate;
 }
