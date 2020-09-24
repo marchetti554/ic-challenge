@@ -5,6 +5,11 @@ Microservice challenge built using Spring Boot, AWS ElasticBeanstalk, AWS RDS an
 
 This service is exposing a SwaggerUI url, use it to the test each one of the exposed endpoints. 
 
-AWS - SwaggerUI -> http://challengeapi-env.eba-zb2amm5s.sa-east-1.elasticbeanstalk.com/swagger-ui.html
+## Heroku - Working
 
 Heroku - SwaggerUI -> https://ic-challenge.herokuapp.com/swagger-ui.html
+
+## AWS EBS - 24/09 -> Free tier usage has exceeded so I had to stop this instance.
+
+AWS - SwaggerUI -> http://challengeapi-env.eba-zb2amm5s.sa-east-1.elasticbeanstalk.com/swagger-ui.html
+
